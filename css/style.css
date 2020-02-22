@@ -43,7 +43,9 @@ html {
 .side-icon-space {
     margin: 33px 0;
 }
-
+.side-icon-space:hover {
+    fill: #3db5ef;
+}
 /* END SIDEBAR */
 
 
