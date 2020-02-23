@@ -51,7 +51,7 @@
         <div class="container-fluid" >
             <div class="row">
                 <!--   SIDE BAR MENU  -->
-                <div class="col-md-2 sidebar-menu text-white text-center p-0 pr-3" style="background-color:#16254f" >
+                <div class="col-lg-2 d-none d-lg-block sidebar-menu text-white text-center p-0 pr-3" style="background-color:#16254f" >
                     <div class="d-flex align-self-center">
                         <img src="img/sidebar/acebility-mobile-white.svg" alt="">
                         <a class="align-self-center pr-2" href="#" >נגישות</a>
@@ -113,7 +113,7 @@
                         <a href="#" class="align-self-center pr-2">יצירת קשר</a>
                     </div>
                 </div>
-                <div class="col-10"  style="background-color:#f1f0f0">
+                <div class="col-sm-12 col-md-12 col-lg-10"  style="background-color:#f1f0f0">
                     <div>
                         <div class="row">
                             <div class="outer-area" >
@@ -133,7 +133,7 @@
                                         <p class="size-18">תוצאות הפעילות שלך לחודש זה:</p>
                                     </div>
                                     <div class="row">
-                                        <div class="col-4 d-flex justify-content-center mb-4" >
+                                        <div class="col-4 d-flex justify-content-center mb-4 border-left" >
                                             <div>
                                                 <img class="hasifa-copy-2" src="img/hasifa-color-2.svg" alt="">
                                             </div>
@@ -142,7 +142,7 @@
                                                 <span class="size-20">חשיפות</span>
                                             </div>
                                         </div>
-                                        <div class="col-4 d-flex justify-content-center mb-4 border-right border-left" >
+                                        <div class="col-4 d-flex justify-content-center mb-4 border-left" >
                                             <div>
                                                 <img class="hasifa-copy-2" src="img/visit-color-2.svg" alt="">
                                             </div>
@@ -179,7 +179,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-5">
+                                        <div class="col-sm-12 col-md-5">
                                             <div class="mt-5">
                                                 <div class="progress rounded-pill" style="width: 75%; height:11px ">
                                                     <div class="progress-bar rounded-pill progress-blue" role="progressbar"
@@ -199,8 +199,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-7">
-                                            <div class="d-flex flex-wrap justify-content-end">
+                                        <div class="col-md-7 col-sm-12 pr-0">
+                                            <div class="d-flex flex-wrap business_card">
                                                 <div class="card m-2 text-center pt-3 align-items-center">
                                                     <img src="img/logo.svg" alt="">
                                                     <div>לוגו</div>
@@ -241,7 +241,7 @@
                                                     <img src="img/video.svg" alt="">
                                                     <div>סרטון תדמית</div>
                                                 </div>
-                                                <div class="card m-2 text-center pt-3 align-items-center">
+                                                <div class="card m-2 text-center pt-3 align-items-center d-none d-md-block">
                                                     <img src="img/mozarim.svg" alt="">
                                                     <div>מוצרים</div>
                                                 </div>
@@ -249,17 +249,20 @@
 
                                         </div>
                                     </div>
-                                    <div class="row pt-4">
-                                        <div class="col-3 d-flex justify-content-center mb-4" >
+                                    <div class="row pt-4 business-footer my-4">
+                                        <div class="col-sm-6 col-md-3 d-flex justify-content-center mb-4 business-item">
                                             <div>
-                                                <img class="hasifa-copy-2" src="img/hasifa.svg" alt="">
+                                                <img class="hasifa-copy-2 d-none d-md-inline" src="img/hasifa.svg" alt="">
                                             </div>
                                             <div class="mr-1 inner-text">
-                                                <p class="m-0 size-32">87</p>
-                                                <span class="size-20">יחידות פרסום</span>
+                                                <span class="m-0 size-32">
+                                                    <img class="hasifa-copy-2 d-md-none mx-auto" src="img/hasifa.svg" alt="" align="middle">
+                                                    87
+                                                    </span>
+                                                <span class="size-20 d-block">יחידות פרסום</span>
                                             </div>
                                         </div>
-                                        <div class="col-3 d-flex justify-content-center mb-4 border-right border-left" >
+                                        <div class="col-sm-6 col-md-3 d-flex justify-content-center mb-4 business-item">
                                             <div>
                                                 <img class="hasifa-copy-2" src="img/visit.svg" alt="">
                                             </div>
@@ -268,7 +271,7 @@
                                                 <span class="size-20">ביקורים</span>
                                             </div>
                                         </div>
-                                        <div class="col-3 d-flex justify-content-center">
+                                        <div class="col-sm-6 col-md-3 d-flex justify-content-center mb-4 business-item">
                                             <div>
                                                 <img class="hasifa-copy-2" src="img/peulot.svg" alt="">
                                             </div>
@@ -277,9 +280,9 @@
                                                 <span class="size-20">פעולות</span>
                                             </div>
                                         </div>
-                                        <div class="col-3 d-flex justify-content-center">
+                                        <div class="col-sm-6 col-md-3 d-flex justify-content-center">
                                             <div>
-                                                <img class="hasifa-copy-2" src="" alt="">
+                                                <img class="hasifa-copy-2" src="img/statistic-copy.svg" alt="">
                                             </div>
                                             <div class="mr-1 inner-text pt-3">
                                                 <p class="m-0 size-20">לכל</p>
@@ -300,7 +303,7 @@
                                 </div>
 
                                 <div class="row ads">
-                                    <div class="col ads mb-4">
+                                    <div class="col-sm-6 col-md-3 p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -313,7 +316,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col-sm-6 col-md-3 p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -325,7 +328,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col-sm-6 col-md-3 p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -338,7 +341,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col-sm-6 col-md-3 p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -353,8 +356,8 @@
                                     </div>
                                 </div>
 
-                                <div class="row my-2 ads">
-                                    <div class="col ads mb-4">
+                                <div class="row my-2 ads p-0">
+                                    <div class="col p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -367,7 +370,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -380,7 +383,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
@@ -393,7 +396,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col ads mb-4">
+                                    <div class="col p-1 mb-4">
                                         <div class="card shadow-sm text-center" style="width:264px; height:192px ">
                                             <img src="img/icons-copy-4.svg" alt="">
                                             <div class="card-body mt-3 px-0">
