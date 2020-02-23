@@ -76,14 +76,12 @@ form {
     padding: 17px 24px 43px;
 }
 
-.card {
+.small-card {
     width:104px;
     height:90px;
 }
-.card > img {
-    width:48px;
-}
-.card.long{
+
+.small-card.long{
     width:223px;
     height:90px;
 }
@@ -92,6 +90,14 @@ form {
 
 
 /* SIDEBAR */
+#side-bar a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+#side-bar a:hover {
+    color:#3db5ef;
+}
 .sidebar-menu {
 
     height:2157px;
@@ -103,9 +109,7 @@ form {
 .side-icon-space {
     margin: 33px 0;
 }
-.side-icon-space:hover {
-    fill: #3db5ef;
-}
+
 
 
 
@@ -126,38 +130,27 @@ form {
     font-size:2.13rem;
     font-weight: lighter;
 }
-.hasifa-copy-2 {
-    width: 32px;
+.budget-icon {
+    width:52px;
 }
 
-@media screen and (min-width: 576px) {
-    .hasifa-copy-2 {
-        width: 38px;
-    }
+/* MORE PUBLISHING OPTION */
 
-
+.plus {
+    position: relative;
+    bottom: 14px;
 }
 
-@media screen and (min-width: 992px) {
-    .hasifa-copy-2 {
-        width: 52px;
-    }
-}
+
 
 #main-content .inner-text {
     line-height: 1.15;
 }
-/*#main-content .border-left{*/
-/*    border-left: 2px solid #d8d8d8!important;*/
+
+
+/*#main-content a:hover {*/
+/*    color: #3db5ef;*/
 /*}*/
-#main-content a {
-    /*font-weight: bold;*/
-    color: #fff;
-    text-decoration: none;
-}
-#main-content a:hover {
-    color: #3db5ef;
-}
 #main-content .update-card {
     color: #ff4960;
 }
@@ -167,17 +160,12 @@ form {
 
 
     /* ADs SECTION CARDS */
-.ads {
-    margin-right:10px;
-}
-.ads img {
-    width: 40px;
-    position: absolute;
-    top: -20px;
-    left: 115px;
-}
+
 .card-link {
     color: #ff4960!important;
+}
+.outer-card-link {
+    color: #16254f;
 }
 
 
@@ -186,12 +174,12 @@ form {
 
  /*Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
-    .card {
+    .small-card {
         width: 84px;
         height: 74px;
     }
-    .card.long {
-        color:red;
+    .small-card.long {
+
         width:182px;
         height:74px
     }
@@ -201,19 +189,37 @@ form {
     .business_card {
         justify-content: center;
     }
+    .card-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .budget-body {
+        display: inline!important;
+    }
 }
 
  /*Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-    .card {
+    .small-card {
         width: 84px;
         height: 74px;
     }
-    .card.long {
-        color:red;
+    .small-card.long {
         width:182px;
         height:74px
     }
+    .card.publish {
+        color:blue;
+        width: 304px;
+        height: 76px;
+    }
+    .ads img {
+        width: 24px;
+        position: absolute;
+        top: -7px;
+        left: 274px;
+    }
+
     .long {
         order:8;
     }
@@ -226,6 +232,8 @@ form {
     .business-item {
         border: none;
     }
+
+
 }
 
  /*Medium devices (tablets, 768px and up)*/
