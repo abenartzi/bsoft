@@ -123,6 +123,9 @@ form {
     color: #fff!important;
 }
 
+.details-btn {
+    width: 88px;
+}
 
 /* MAIN CONTENT */
 
@@ -210,11 +213,15 @@ form {
     .plus {
         position: relative;
         bottom: 8px;
-        left: 165px;
+        left: 180px;
     }
+    /*.solution-card {*/
+    /*    padding:0 25px 25px 25px !important;*/
+    /*    text-align:right!important;*/
+    /*}*/
     .solution-card {
-        padding:0 25px 25px 25px !important;
-        text-align:right!important;
+        padding: 0 25px 25px 10px !important;
+        text-align: right!important;
     }
     .solution-card .card-text{
         width: 240px;
@@ -225,7 +232,21 @@ form {
     .solution-card  div {
         justify-content: space-between
     }
-
+    .plus {
+        position: relative;
+        bottom: 8px;
+        left: 180px;
+    }
+    .details-btn {
+        width:140px;
+    }
+}
+@media screen and (max-width: 501px) {
+    .plus {
+        position: relative;
+        bottom: 8px;
+        left: 160px;
+    }
 }
 
  /*Small devices (landscape phones, 576px and up)*/
