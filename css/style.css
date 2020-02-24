@@ -16,6 +16,8 @@
 :root {
     --watermelon: #ff495c;
     --pinkish-orange:#ff692f;
+    --dodger-blue:#42a3ff;
+    --robin-egg-blue:#90ebff;
 }
 
 body,
@@ -99,7 +101,7 @@ form {
 }
 .sidebar-menu {
 
-    height:2157px;
+    height:2280px;
     min-width: 168px;
 }
 .accessibility {
@@ -225,7 +227,7 @@ form {
         justify-content: space-between
     }
     .solution-deck {
-
+        padding:0!important;
     }
     .details-btn {
         width:140px;
@@ -245,6 +247,9 @@ form {
     }
     .long {
         order:1;
+    }
+    .solution-deck {
+        padding: 0;
     }
 }
 
@@ -351,7 +356,7 @@ form {
     }
     .plus {
         position: relative;
-        bottom: 40px;
+        bottom: 33px;
         width: 40px;
     }
     .solution-deck {
@@ -367,16 +372,16 @@ form {
 
 
 
-.Rectangle-3-Copy-6 {
+.orange-btn {
     color: #fff;
     width: 136px;
     height: 32px;
     border-radius: 20px;
     box-shadow: 2px 2px 6px 0 rgba(63, 63, 63, 0.5);
-    background-image: linear-gradient(to right, #ff495c 0%, #ff692f 100%);
-    position: absolute;
-    top: 75px;
-    left: 70px;
+    background-image: linear-gradient(to right, var(--watermelon) 0%, var(--pinkish-orange) 100%);
+    /*position: absolute;*/
+    /*top: 75px;*/
+    /*left: 70px;*/
     padding: 4px;
     text-align: center;
 }
@@ -384,5 +389,6 @@ form {
     width: 80px;
     height: 10px;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #42a3ff 0%, #90ebff 100%);
+    background-image: linear-gradient(to right, var(--dodger-blue) 0%, var(--robin-egg-blue) 100%);
 }
+
