@@ -101,7 +101,7 @@ form {
 }
 .sidebar-menu {
 
-    height:2280px;
+    height:2842pxpx;
     min-width: 168px;
 }
 .accessibility {
@@ -181,6 +181,24 @@ form {
 }
 
 
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+    background:#fff;
+    width:100%;
+}
+.card {
+    flex: 0 0 auto;
+}
+
+
+ /* FOOTER */
+
+footer {
+    background:#16254f;
+
+}
 
  /* MEDIA QUERY */
 
@@ -209,10 +227,6 @@ form {
         border-left:none!important;
     }
 
-    /*.solution-card {*/
-    /*    padding:0 25px 25px 25px !important;*/
-    /*    text-align:right!important;*/
-    /*}*/
     .solution-card {
         padding: 0 25px 25px 10px !important;
         text-align: right!important;
@@ -236,6 +250,9 @@ form {
         position: relative;
         top: -14px;
         left: 25px;
+    }
+    .scrolling-wrapper .card {
+        width: 75%;
     }
 }
 @media screen and (max-width: 501px) {
@@ -337,7 +354,7 @@ form {
     }
     .plus {
         position: relative;
-        bottom: 40px;
+        bottom: 32px;
         width: 40px;
     }
     .solution-deck {
