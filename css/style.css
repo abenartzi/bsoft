@@ -110,7 +110,18 @@ form {
     margin: 33px 0;
 }
 
-
+.btn-outline-warning {
+    background: #ff4960!important;
+    border: #ff4960!important;
+    color: #fff!important;
+}
+.btn-outline-warning:hover,
+.btn-outline-warning:focus
+{
+    background: #ff4960!important;
+    border: #ff4960!important;
+    color: #fff!important;
+}
 
 
 /* MAIN CONTENT */
@@ -174,6 +185,11 @@ form {
 
  /*Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
+
+    .update-card {
+        text-align:center;
+    }
+
     .business-card {
         justify-content:center!important;
     }
@@ -191,23 +207,34 @@ form {
     .border-left {
         border-left:none!important;
     }
+    .plus {
+        position: relative;
+        bottom: 8px;
+        left: 165px;
+    }
+    .solution-card {
+        padding:0 25px 25px 25px !important;
+        text-align:right!important;
+    }
+    .solution-card .card-text{
+        width: 240px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .solution-card  div {
+        justify-content: space-between
+    }
+
 }
 
  /*Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-    /*.small-card {*/
-    /*    width: 84px;*/
-    /*    height: 74px;*/
-    /*}*/
-    /*.small-card.long {*/
-    /*    width:182px;*/
-    /*    height:74px*/
-    /*}*/
-    /*.card.publish {*/
-    /*    color:blue;*/
-    /*    width: 304px;*/
-    /*    height: 76px;*/
-    /*}*/
+    .plus {
+        position: relative;
+        bottom: 8px;
+        left: 165px;
+    }
     .ads img {
         width: 24px;
         position: absolute;

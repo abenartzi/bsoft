@@ -204,9 +204,9 @@
                                                     <span>עדיין לא עדכנת את כל הפרטים בכרטיס.</span>
                                                     <span>לשיפור הנראות ולקבלת יותר פניות מומלץ לעדכן את הכרטיס.</span>
                                                 </div>
-                                                <div class="mt-3">
+                                                <div class="mt-3 update-card">
                                                     <a href="#"
-                                                       class="btn btn-outline-warning rounded-pill shadow-sm update-card">
+                                                       class="btn btn-outline-warning rounded-pill shadow-sm d-none d-md-inline">
                                                         <span>עדכון הכרטיס</span>
                                                         <i class="fas fa-chevron-down pr-2"></i>
                                                     </a>
@@ -262,6 +262,14 @@
                                                     <img src="img/mozarim.svg" alt="">
                                                     <div>מוצרים</div>
                                                 </div>
+
+                                            </div>
+                                            <div class="mt-3 update-card text-center">
+                                                <a href="#"
+                                                   class="btn btn-outline-warning rounded-pill shadow-sm d-inline d-md-none">
+                                                    <span>עדכון הכרטיס</span>
+                                                    <i class="fas fa-chevron-down pr-2"></i>
+                                                </a>
                                             </div>
 
                                         </div>
@@ -338,14 +346,20 @@
                                 </div>
 
                                 <div class="card-deck my-2 px-5">
-                                    <div class="card shadow-sm">
+                                    <div class="card shadow-sm ">
                                         <img src="img/icons-copy-4.svg" alt="" class="plus">
-                                        <div class="card-body text-center ">
+                                        <div class="card-body text-center solution-card">
                                             <h5 class="card-title font-weight-bold">אתר אינטרנט</h5>
-                                            <p class="card-text">להבטחת נראות מקסימלית ברשתות החברתיות עם חשיפה
+                                            <div class="d-flex">
+                                                <p class="card-text ">להבטחת נראות מקסימלית
+                                                ברשתות החברתיות עם חשיפה
                                                 ממוקדת בקהל
                                                 היעד שלך, בתקציב מוגדר ומדויק</p>
-                                            <a href="#" class="card-link">לפרטים נוספים
+                                                <button
+                                                        class="btn btn-outline-warning rounded-pill d-block d-sm-none">לפרטים
+                                                </button>
+                                            </div>
+                                            <a href="#" class="card-link d-none d-sm-block">לפרטים נוספים
                                                 <i class="fas fa-chevron-left"></i>
                                             </a>
                                         </div>
