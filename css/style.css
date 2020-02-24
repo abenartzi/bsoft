@@ -1,5 +1,5 @@
 @font-face {
-    font-family: OpenSansHebrew;
+    font-family: 'OpenSansHebrew';
     src: url('../fonts/opensanshebrew-light.ttf') format('truetype');
     font-weight: 300;
 }
@@ -23,7 +23,6 @@ html {
     direction: rtl;
     margin: 0;
     padding: 0;
-    /*font-family: 'OpenSans', serif;*/
     font-family: OpenSansHebrew, serif;
     font-size: 15px;
     color: #16254f;
@@ -150,10 +149,7 @@ form {
 
 /* MORE PUBLISHING OPTION */
 
-.plus {
-    position: relative;
-    bottom: 14px;
-}
+
 
 
 
@@ -210,11 +206,7 @@ form {
     .border-left {
         border-left:none!important;
     }
-    .plus {
-        position: relative;
-        bottom: 8px;
-        left: 180px;
-    }
+
     /*.solution-card {*/
     /*    padding:0 25px 25px 25px !important;*/
     /*    text-align:right!important;*/
@@ -232,30 +224,32 @@ form {
     .solution-card  div {
         justify-content: space-between
     }
-    .plus {
-        position: relative;
-        bottom: 8px;
-        left: 180px;
+    .solution-deck {
+
     }
     .details-btn {
         width:140px;
     }
+    .plus {
+        position: relative;
+        top: -14px;
+        left: 25px;
+    }
 }
 @media screen and (max-width: 501px) {
     .plus {
-        position: relative;
-        bottom: 8px;
-        left: 120px;
+        position: absolute;
+        right: 0;
+        top: -13px;
+
+    }
+    .long {
+        order:1;
     }
 }
 
  /*Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-    .plus {
-        position: relative;
-        bottom: 8px;
-        left: 165px;
-    }
     .ads img {
         width: 24px;
         position: absolute;
@@ -270,7 +264,21 @@ form {
     .border-left {
         border-left:none!important;
     }
-
+    .solution-deck {
+        flex-direction: column;
+    }
+    .solution-deck div{
+        margin: 15px;
+    }
+    .plus {
+        position: absolute;
+        bottom: 185px;
+        right: 10px;
+        width: 30px;
+    }
+    .long {
+        order:1;
+    }
 
 }
 
@@ -281,7 +289,7 @@ form {
 
     }
     .business-card {
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .business-item {
         border-left: 2px solid #d8d8d8!important;
@@ -295,6 +303,17 @@ form {
     }
     .border-left {
         /*border-left:none!important;*/
+    }
+    .plus {
+        position: relative;
+        bottom: 55px;
+        width: 40px;
+    }
+    .solution-deck {
+        flex-direction: column;
+    }
+    .solution-deck div{
+        margin: 15px;
     }
 }
 
@@ -311,6 +330,17 @@ form {
         flex-direction: row;
         text-align:center;
     }
+    .plus {
+        position: relative;
+        bottom: 40px;
+        width: 40px;
+    }
+    .solution-deck {
+        margin-bottom: 53px;
+    }
+    .long {
+        order:1;
+    }
 
 }
 
@@ -319,6 +349,18 @@ form {
     .business-item {
         border-left: 2px solid #d8d8d8!important;
     }
+    .plus {
+        position: relative;
+        bottom: 40px;
+        width: 40px;
+    }
+    .solution-deck {
+        margin-bottom: 53px;
+    }
+    .business-card {
+        justify-content: flex-end;
+    }
+
 }
 
 
