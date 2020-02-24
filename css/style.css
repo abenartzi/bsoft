@@ -174,20 +174,8 @@ form {
 
  /*Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
-    .small-card {
-        width: 84px;
-        height: 74px;
-    }
-    .small-card.long {
-
-        width:182px;
-        height:74px
-    }
-    .long {
-        order:8;
-    }
-    .business_card {
-        justify-content: center;
+    .business-card {
+        justify-content:center!important;
     }
     .card-group {
         flex-direction: row;
@@ -196,23 +184,30 @@ form {
     .budget-body {
         display: inline!important;
     }
+    .business-group {
+        flex-direction: column;
+        text-align:center;
+    }
+    .border-left {
+        border-left:none!important;
+    }
 }
 
  /*Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-    .small-card {
-        width: 84px;
-        height: 74px;
-    }
-    .small-card.long {
-        width:182px;
-        height:74px
-    }
-    .card.publish {
-        color:blue;
-        width: 304px;
-        height: 76px;
-    }
+    /*.small-card {*/
+    /*    width: 84px;*/
+    /*    height: 74px;*/
+    /*}*/
+    /*.small-card.long {*/
+    /*    width:182px;*/
+    /*    height:74px*/
+    /*}*/
+    /*.card.publish {*/
+    /*    color:blue;*/
+    /*    width: 304px;*/
+    /*    height: 76px;*/
+    /*}*/
     .ads img {
         width: 24px;
         position: absolute;
@@ -220,17 +215,12 @@ form {
         left: 274px;
     }
 
-    .long {
-        order:8;
+    .business-group {
+        flex-direction: column;
+        text-align:center;
     }
-    .business_card {
-        justify-content: center;
-    }
-    .business-footer {
-        border-top: 1px solid #ccc;
-    }
-    .business-item {
-        border: none;
+    .border-left {
+        border-left:none!important;
     }
 
 
@@ -238,14 +228,25 @@ form {
 
  /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    .business_card {
-        justify-content: end;
+    .business-group {
+        flex-direction: column;
+
+    }
+    .business-card {
+        justify-content: center;
     }
     .business-item {
         border-left: 2px solid #d8d8d8!important;
     }
     .long {
         order:8;
+    }
+    .business-group {
+        flex-direction: row;
+        text-align:center;
+    }
+    .border-left {
+        /*border-left:none!important;*/
     }
 }
 
@@ -254,9 +255,15 @@ form {
     .business-item {
         border-left: 2px solid #d8d8d8!important;
     }
-    .long {
-        order:8;
+    .business-group {
+        flex-direction: column;
+
     }
+    .business-group {
+        flex-direction: row;
+        text-align:center;
+    }
+
 }
 
  /*Extra large devices (large desktops, 1200px and up)*/
